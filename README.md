@@ -1,60 +1,74 @@
-VansLife 🚐
-Add adventure to your life by joining the #vanlife movement.
-Find and rent the perfect van for your ultimate road trip experience!
+## 🚀 VansLife - A Modern Van Rental Application
 
-Live: https://vanslifebyfilip.netlify.app/about
+**Live Demo (Netlify):** [https://vanslifebyfilip.netlify.app/](https://vanslifebyfilip.netlify.app/)
 
-Overview
-VansLife is a modern frontend application designed to show off my latest skills in React.
+**VansLife** is a comprehensive **Frontend project** built with **React.js**, designed to showcase advanced skills in building **scalable and secure** web applications. The app simulates a vehicle rental platform with a public-facing catalog and a secured **Host Dashboard**.
 
-Modern React workflow with best practices.
+---
 
-Modular, scalable code organization.
+## 🎯 My Key Skills Demonstrated (For Recruiters)
 
-Protected routing and authentication.
+This project demonstrates my proficiency in the following areas, essential for a Frontend Developer role:
 
-Real-world UI/UX polish for consumer apps.
+### 1. **Application Architecture & React Fundamentals**
+* **Modular, Scalable Code:** Project structure relies on Functional Components and Hooks, ensuring a clear separation of concerns and maintainability.
+* **State Management:** Effective use of built-in React Hooks (`useState`, `useEffect`, `useContext`, and `useReducer` for complex state) to manage application data flow.
+* **Routing and Navigation:** Advanced implementation of **React Router** for:
+    * **Nested Routes:** Utilized within the Host Dashboard for sections like Info, Pricing, and Photos.
+    * **Dynamic Segments (`/vans/:id`)** for loading specific resource data.
 
-Features
-Sleek, Responsive Design: Clean interface, mobile-friendly layouts.
+### 2. **Security & User Experience (UX)**
+* **Protected Routing:** Implemented a custom **authentication mechanism** (demo login) that secures the entire `/host` area using `React Router` and conditional rendering.
+* **Error Handling:** Deployment of a **Custom 404 Page** and proper management of loading states and API errors across the interface.
+* **Responsive Design:** Ensuring full responsiveness and an intuitive UI/UX for both mobile and desktop users.
 
-React Router-Based Navigation: Seamless transitions and protected host only areas.
+### 3. **Workflow and Technologies**
+* **Vite:** Utilizing a modern bundler for fast development and production build optimization.
+* **CSS Modules:** Managing component-level styles to minimize the risk of collision and increase code isolation.
+* **CI/CD Deployment:** Experience integrating with platforms like **Netlify** for continuous deployment.
 
-Van Catalog: Browse richly described, categorized van rentals (Simple, Rugged, Luxury).
+---
 
-Custom Authentication Flow: Demo login protects host dashboard areas.
+## 🛠️ Tech Stack
 
-Error Handling: Custom 404/NotFound experience for undefined routes.
+| Category | Technology | Application in Project |
+| :--- | :--- | :--- |
+| **Main Framework** | **React.js** (Functional Components, Hooks) | The core foundation of the application. |
+| **Routing** | **React Router v6+** | Navigation, **Protected Routes**, **Nested Routes**. |
+| **Bundling** | **Vite** | Fast development and production optimization. |
+| **Styling** | **CSS Modules** | Component style isolation. |
+| **Deployment** | **Netlify** | Live deployment and CI/CD. |
 
-Tech Stack
-React (with functional components)
+---
 
-React Router
+## 📝 Key Features
 
-Vite
+* **Custom Authentication (Demo):** Implemented login flow to protect the host dashboard.
+* **Van Catalog:** Displaying a list of vans with categorization (`Simple`, `Rugged`, `Luxury`).
+* **Van Details:** Dynamic loading of data for individual vans.
+* **Host Dashboard:** A secure area with dedicated sections:
+    * `Income` (Earnings Summary)
+    * `Reviews` (Customer Feedback)
+    * `Vans` (Van Management)
 
-CSS Modules
+---
 
-Netlify (live deployment)
+## 📂 Routing Structure
 
-Pages & Routing Structure
-/ — Home: Inspiration for your next adventure.
+The application uses a complex, two-tier routing structure:
 
-/about — About: Project mission, values, and team philosophy.
+### 1. Public Routes:
+* `/` — Home Page
+* `/vans` — Van Listing
+* `/vans/:id` — Details Page
+* `/login` — Login Page
+* `*` — Custom 404
 
-/vans — All Vans: List of available van rentals.
-
-/vans/:id — Van Details: In-depth info and booking for each van.
-
-/login — Login: Access for van owners/hosts.
-
-Host Dashboard (Protected):
-/host — Dashboard overview
-
-/host/income — Earnings summary
-
-/host/reviews — Customer feedback
-
-/host/vans — Manage owned vans
-
-/host/vans/:id and subroutes for info, pricing, and photos
+### 2. Host Dashboard (Protected Routes):
+* `/host` — Main Dashboard
+* `/host/income`
+* `/host/reviews`
+* `/host/vans` — Host Van Listing
+* `/host/vans/:id`
+    * `/host/vans/:id/pricing`
+    * `/host/vans/:id/photos`
