@@ -740,3 +740,15 @@ img.graph {
     color: #ff8c38;
     margin-right: 5px;
 }
+
+@media (min-width: 1100px) {
+    body {
+        display: flex;
+        justify-self: center;
+        width: 1100px;
+    }
+
+    header{
+        width: 1100px;
+    }
+}
